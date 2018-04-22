@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="127" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="524" />
+   <clocksource preferredWidth="522" />
+   <frequency preferredWidth="505" />
+  </columns>
+ </clocktable>
+ <window width="1863" height="1096" x="-8" y="-8" />
+ <library
+   expandedCategories="Project,Library/Peripherals/Microcontroller Peripherals,Library,Library/Peripherals" />
+ <hdlexample language="VERILOG" />
+</preferences>

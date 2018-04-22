@@ -1,0 +1,147 @@
+set_global_assignment -entity "myniosiicpu" -library "myniosiicpu" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "myniosiicpu" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "myniosiicpu" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "myniosiicpu" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../myniosiicpu.sopcinfo"]
+set_instance_assignment -entity "myniosiicpu" -library "myniosiicpu" -name SLD_INFO "QSYS_NAME myniosiicpu HAS_SOPCINFO 1 GENERATION_ID 1514451002"
+set_global_assignment -library "myniosiicpu" -name MISC_FILE [file join $::quartus(qip_path) "../../myniosiicpu.cmp"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "myniosiicpu" -name MISC_FILE [file join $::quartus(qip_path) "../../myniosiicpu.qsys"]
+
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "myniosiicpu.v"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_irq_mapper.sv"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_width_adapter.sv"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_address_alignment.sv"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_burst_uncompressor.sv"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_arbitrator.sv"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_rsp_xbar_mux.sv"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_rsp_xbar_demux.sv"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_cmd_xbar_mux.sv"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_cmd_xbar_demux_001.sv"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_cmd_xbar_demux.sv"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
+set_global_assignment -library "myniosiicpu" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_burst_adapter.sv"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_traffic_limiter.sv"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_st_pipeline_base.v"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_id_router_001.sv"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_id_router.sv"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_addr_router.sv"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_agent.sv"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_agent.sv"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
+set_global_assignment -library "myniosiicpu" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_led_red_pio.v"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_TIMER2.v"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_TIMER1.v"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_button_pio.v"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_lcd_display.v"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_led_pio.v"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_jtag_uart.v"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_sysid.v"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_epcs.v"]
+set_global_assignment -library "myniosiicpu" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_epcs_boot_rom.hex"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_sdram.v"]
+set_global_assignment -library "myniosiicpu" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_cpu.ocp"]
+set_global_assignment -library "myniosiicpu" -name SDC_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_cpu.sdc"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_cpu.v"]
+set_global_assignment -library "myniosiicpu" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_cpu_bht_ram.mif"]
+set_global_assignment -library "myniosiicpu" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_cpu_ic_tag_ram.mif"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_cpu_jtag_debug_module_sysclk.v"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_cpu_jtag_debug_module_tck.v"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_cpu_jtag_debug_module_wrapper.v"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_cpu_mult_cell.v"]
+set_global_assignment -library "myniosiicpu" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_cpu_ociram_default_contents.mif"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_cpu_oci_test_bench.v"]
+set_global_assignment -library "myniosiicpu" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_cpu_rf_ram_a.mif"]
+set_global_assignment -library "myniosiicpu" -name SOURCE_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_cpu_rf_ram_b.mif"]
+set_global_assignment -library "myniosiicpu" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/myniosiicpu_cpu_test_bench.v"]
+
+set_global_assignment -entity "myniosiicpu_irq_mapper" -library "myniosiicpu" -name IP_TOOL_NAME "altera_irq_mapper"
+set_global_assignment -entity "myniosiicpu_irq_mapper" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "myniosiicpu_irq_mapper" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "myniosiicpu" -name IP_TOOL_NAME "altera_merlin_width_adapter"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "myniosiicpu_rsp_xbar_mux" -library "myniosiicpu" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "myniosiicpu_rsp_xbar_mux" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "myniosiicpu_rsp_xbar_mux" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "myniosiicpu_rsp_xbar_demux" -library "myniosiicpu" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "myniosiicpu_rsp_xbar_demux" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "myniosiicpu_rsp_xbar_demux" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "myniosiicpu_cmd_xbar_mux" -library "myniosiicpu" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "myniosiicpu_cmd_xbar_mux" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "myniosiicpu_cmd_xbar_mux" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "myniosiicpu_cmd_xbar_demux_001" -library "myniosiicpu" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "myniosiicpu_cmd_xbar_demux_001" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "myniosiicpu_cmd_xbar_demux_001" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "myniosiicpu_cmd_xbar_demux" -library "myniosiicpu" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "myniosiicpu_cmd_xbar_demux" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "myniosiicpu_cmd_xbar_demux" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_reset_controller" -library "myniosiicpu" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_reset_controller" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_burst_adapter" -library "myniosiicpu" -name IP_TOOL_NAME "altera_merlin_burst_adapter"
+set_global_assignment -entity "altera_merlin_burst_adapter" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_burst_adapter" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "myniosiicpu" -name IP_TOOL_NAME "altera_merlin_traffic_limiter"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "myniosiicpu_id_router_001" -library "myniosiicpu" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "myniosiicpu_id_router_001" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "myniosiicpu_id_router_001" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "myniosiicpu_id_router" -library "myniosiicpu" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "myniosiicpu_id_router" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "myniosiicpu_id_router" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "myniosiicpu_addr_router" -library "myniosiicpu" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "myniosiicpu_addr_router" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "myniosiicpu_addr_router" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "myniosiicpu" -name IP_TOOL_NAME "altera_avalon_sc_fifo"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "myniosiicpu" -name IP_TOOL_NAME "altera_merlin_slave_agent"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_agent" -library "myniosiicpu" -name IP_TOOL_NAME "altera_merlin_master_agent"
+set_global_assignment -entity "altera_merlin_master_agent" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_master_agent" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "myniosiicpu" -name IP_TOOL_NAME "altera_merlin_slave_translator"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "altera_merlin_master_translator" -library "myniosiicpu" -name IP_TOOL_NAME "altera_merlin_master_translator"
+set_global_assignment -entity "altera_merlin_master_translator" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "altera_merlin_master_translator" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "myniosiicpu_led_red_pio" -library "myniosiicpu" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "myniosiicpu_led_red_pio" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0.1"
+set_global_assignment -entity "myniosiicpu_led_red_pio" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "myniosiicpu_TIMER2" -library "myniosiicpu" -name IP_TOOL_NAME "altera_avalon_timer"
+set_global_assignment -entity "myniosiicpu_TIMER2" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0.1"
+set_global_assignment -entity "myniosiicpu_TIMER2" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "myniosiicpu_TIMER1" -library "myniosiicpu" -name IP_TOOL_NAME "altera_avalon_timer"
+set_global_assignment -entity "myniosiicpu_TIMER1" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0.1"
+set_global_assignment -entity "myniosiicpu_TIMER1" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "myniosiicpu_button_pio" -library "myniosiicpu" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "myniosiicpu_button_pio" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0.1"
+set_global_assignment -entity "myniosiicpu_button_pio" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "myniosiicpu_lcd_display" -library "myniosiicpu" -name IP_TOOL_NAME "altera_avalon_lcd_16207"
+set_global_assignment -entity "myniosiicpu_lcd_display" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0.1"
+set_global_assignment -entity "myniosiicpu_lcd_display" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "myniosiicpu_led_pio" -library "myniosiicpu" -name IP_TOOL_NAME "altera_avalon_pio"
+set_global_assignment -entity "myniosiicpu_led_pio" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0.1"
+set_global_assignment -entity "myniosiicpu_led_pio" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "myniosiicpu_jtag_uart" -library "myniosiicpu" -name IP_TOOL_NAME "altera_avalon_jtag_uart"
+set_global_assignment -entity "myniosiicpu_jtag_uart" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0.1"
+set_global_assignment -entity "myniosiicpu_jtag_uart" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "myniosiicpu_sysid" -library "myniosiicpu" -name IP_TOOL_NAME "altera_avalon_sysid_qsys"
+set_global_assignment -entity "myniosiicpu_sysid" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "myniosiicpu_sysid" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "myniosiicpu_epcs" -library "myniosiicpu" -name IP_TOOL_NAME "altera_avalon_epcs_flash_controller"
+set_global_assignment -entity "myniosiicpu_epcs" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0.1"
+set_global_assignment -entity "myniosiicpu_epcs" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "myniosiicpu_sdram" -library "myniosiicpu" -name IP_TOOL_NAME "altera_avalon_new_sdram_controller"
+set_global_assignment -entity "myniosiicpu_sdram" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0.1"
+set_global_assignment -entity "myniosiicpu_sdram" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -entity "myniosiicpu_cpu" -library "myniosiicpu" -name IP_TOOL_NAME "altera_nios2_qsys"
+set_global_assignment -entity "myniosiicpu_cpu" -library "myniosiicpu" -name IP_TOOL_VERSION "13.0"
+set_global_assignment -entity "myniosiicpu_cpu" -library "myniosiicpu" -name IP_TOOL_ENV "Qsys"

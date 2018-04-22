@@ -1,0 +1,126 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=D:/programs/FPGA/PLD/de2_115/ --output-directory=D:/programs/FPGA/PLD/de2_115/myniosiicpu/ --report-file=bsf:D:/programs/FPGA/PLD/de2_115/myniosiicpu.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=D:/programs/FPGA/PLD/de2_115/myniosiicpu.qsys
+Progress: Loading de2_115/myniosiicpu.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding cpu [altera_nios2_qsys 13.0]
+Progress: Parameterizing module cpu
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.0.1]
+Progress: Parameterizing module sdram
+Progress: Adding epcs [altera_avalon_epcs_flash_controller 13.0.1]
+Progress: Parameterizing module epcs
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding led_pio [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module led_pio
+Progress: Adding lcd_display [altera_avalon_lcd_16207 13.0.1]
+Progress: Parameterizing module lcd_display
+Progress: Adding button_pio [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module button_pio
+Progress: Adding seven_seg_pio [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module seven_seg_pio
+Progress: Adding TIMER1 [altera_avalon_timer 13.0.1]
+Progress: Parameterizing module TIMER1
+Progress: Adding TIMER2 [altera_avalon_timer 13.0.1]
+Progress: Parameterizing module TIMER2
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: myniosiicpu.epcs: Dedicated AS interface is not supported, signals are exported to top level design.
+Info: myniosiicpu.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: myniosiicpu.sysid: Time stamp will be automatically updated when this component is generated.
+Info: myniosiicpu.button_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=D:/programs/FPGA/PLD/de2_115/ --output-directory=D:/programs/FPGA/PLD/de2_115/myniosiicpu/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:D:/programs/FPGA/PLD/de2_115/myniosiicpu.sopcinfo --report-file=html:D:/programs/FPGA/PLD/de2_115/myniosiicpu.html --report-file=qip:D:/programs/FPGA/PLD/de2_115/myniosiicpu/synthesis/myniosiicpu.qip --report-file=cmp:D:/programs/FPGA/PLD/de2_115/myniosiicpu.cmp --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=D:/programs/FPGA/PLD/de2_115/myniosiicpu.qsys --language=VERILOG
+Progress: Loading de2_115/myniosiicpu.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding cpu [altera_nios2_qsys 13.0]
+Progress: Parameterizing module cpu
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.0.1]
+Progress: Parameterizing module sdram
+Progress: Adding epcs [altera_avalon_epcs_flash_controller 13.0.1]
+Progress: Parameterizing module epcs
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding led_pio [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module led_pio
+Progress: Adding lcd_display [altera_avalon_lcd_16207 13.0.1]
+Progress: Parameterizing module lcd_display
+Progress: Adding button_pio [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module button_pio
+Progress: Adding seven_seg_pio [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module seven_seg_pio
+Progress: Adding TIMER1 [altera_avalon_timer 13.0.1]
+Progress: Parameterizing module TIMER1
+Progress: Adding TIMER2 [altera_avalon_timer 13.0.1]
+Progress: Parameterizing module TIMER2
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: myniosiicpu.epcs: Dedicated AS interface is not supported, signals are exported to top level design.
+Info: myniosiicpu.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: myniosiicpu.sysid: Time stamp will be automatically updated when this component is generated.
+Info: myniosiicpu.button_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: myniosiicpu: Generating myniosiicpu "myniosiicpu" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 12 modules, 60 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 25 modules, 112 connections
+Info: merlin_domain_transform: After transform: 51 modules, 277 connections
+Info: merlin_router_transform: After transform: 64 modules, 329 connections
+Info: merlin_traffic_limiter_transform: After transform: 65 modules, 334 connections
+Info: merlin_burst_transform: After transform: 66 modules, 338 connections
+Info: reset_adaptation_transform: After transform: 67 modules, 264 connections
+Info: merlin_network_to_switch_transform: After transform: 92 modules, 334 connections
+Info: merlin_width_transform: After transform: 94 modules, 340 connections
+Info: limiter_update_transform: After transform: 94 modules, 341 connections
+Info: merlin_mm_transform: After transform: 94 modules, 341 connections
+Info: merlin_interrupt_mapper_transform: After transform: 95 modules, 344 connections
+Warning: myniosiicpu: "No matching role found for epcs:epcs_control_port:endofpacket (endofpacket)"
+Warning: myniosiicpu: "No matching role found for epcs:epcs_control_port:dataavailable (dataavailable)"
+Warning: myniosiicpu: "No matching role found for epcs:epcs_control_port:readyfordata (readyfordata)"
+Info: cpu: Starting RTL generation for module 'myniosiicpu_cpu'
+Info: cpu:   Generation command is [exec D:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I D:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I D:/altera/13.0/quartus/sopc_builder/bin/europa -I D:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I D:/altera/13.0/quartus/sopc_builder/bin -I D:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I D:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I D:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2 -I D:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2 -- D:/altera/13.0/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=myniosiicpu_cpu --dir=C:/Users/JqZhang/AppData/Local/Temp/alt7526_581889699318074195.dir/0001_cpu_gen/ --quartus_dir=D:/altera/13.0/quartus --verilog --config=C:/Users/JqZhang/AppData/Local/Temp/alt7526_581889699318074195.dir/0001_cpu_gen//myniosiicpu_cpu_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: cpu: # 2017.12.27 01:22:04 (*) Starting Nios II generation
+Info: cpu: # 2017.12.27 01:22:04 (*)   Checking for plaintext license.
+Info: cpu: # 2017.12.27 01:22:04 (*)   Plaintext license not found.
+Info: cpu: # 2017.12.27 01:22:04 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2017.12.27 01:22:05 (*)   Encrypted license found.  SOF will not be time-limited.
+Info: cpu: # 2017.12.27 01:22:05 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2017.12.27 01:22:05 (*)   Creating all objects for CPU
+Info: cpu: # 2017.12.27 01:22:05 (*)     Testbench
+Info: cpu: # 2017.12.27 01:22:05 (*)     Instruction decoding
+Info: cpu: # 2017.12.27 01:22:05 (*)       Instruction fields
+Info: cpu: # 2017.12.27 01:22:05 (*)       Instruction decodes
+Info: cpu: # 2017.12.27 01:22:06 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2017.12.27 01:22:06 (*)       Instruction controls
+Info: cpu: # 2017.12.27 01:22:06 (*)     Pipeline frontend
+Info: cpu: # 2017.12.27 01:22:06 (*)     Pipeline backend
+Info: cpu: # 2017.12.27 01:22:08 (*)   Generating RTL from CPU objects
+Info: cpu: # 2017.12.27 01:22:10 (*)   Creating encrypted RTL
+Info: cpu: # 2017.12.27 01:22:12 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'myniosiicpu_cpu'
+Info: cpu: "myniosiicpu" instantiated altera_nios2_qsys "cpu"
+Info: sdram: Starting RTL generation for module 'myniosiicpu_sdram'
+Info: sdram:   Generation command is [exec D:/altera/13.0/quartus/bin/perl/bin/perl.exe -I D:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I D:/altera/13.0/quartus/sopc_builder/bin/europa -I D:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I D:/altera/13.0/quartus/sopc_builder/bin -I D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=myniosiicpu_sdram --dir=C:/Users/JqZhang/AppData/Local/Temp/alt7526_581889699318074195.dir/0002_sdram_gen/ --quartus_dir=D:/altera/13.0/quartus --verilog --config=C:/Users/JqZhang/AppData/Local/Temp/alt7526_581889699318074195.dir/0002_sdram_gen//myniosiicpu_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram: Done RTL generation for module 'myniosiicpu_sdram'
+Info: sdram: "myniosiicpu" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: epcs: Starting RTL generation for module 'myniosiicpu_epcs'
+Info: epcs:   Generation command is [exec D:/altera/13.0/quartus/bin/perl/bin/perl.exe -I D:/altera/13.0/quartus/common/ip/altera/common/perl/5.8.3 -I D:/altera/13.0/quartus/sopc_builder/bin/europa -I D:/altera/13.0/quartus/sopc_builder/bin/perl_lib -I D:/altera/13.0/quartus/sopc_builder/bin -I D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_epcs_flash_controller -- D:/altera/13.0/quartus/../ip/altera/sopc_builder_ip/altera_avalon_epcs_flash_controller/generate_rtl.pl --name=myniosiicpu_epcs --dir=C:/Users/JqZhang/AppData/Local/Temp/alt7526_581889699318074195.dir/0003_epcs_gen/ --quartus_dir=D:/altera/13.0/quartus --verilog --config=C:/Users/JqZhang/AppData/Local/Temp/alt7526_581889699318074195.dir/0003_epcs_gen//myniosiicpu_epcs_component_configuration.pl  --do_build_sim=0  ]
+Info: epcs: Done RTL generation for module 'myniosiicpu_epcs'
+Info: epcs: "myniosiicpu" instantiated altera_avalon_epcs_flash_controller "epcs"
+Error: Generation stopped, 91 or more modules remaining
+Info: myniosiicpu: Done myniosiicpu" with 29 modules, 18 files, 1039741 bytes
+Error: ip-generate failed with exit code 1: 1 Error, 3 Warnings
+Info: Stopping: Create HDL design files for synthesis

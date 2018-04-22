@@ -1,0 +1,78 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=D:/programs/FPGA/PLD/de2_115/ --output-directory=D:/programs/FPGA/PLD/de2_115/myniosiicpu/ --report-file=bsf:D:/programs/FPGA/PLD/de2_115/myniosiicpu.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=D:/programs/FPGA/PLD/de2_115/myniosiicpu.qsys
+Progress: Loading de2_115/myniosiicpu.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding cpu [altera_nios2_qsys 13.0]
+Progress: Parameterizing module cpu
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.0.1]
+Progress: Parameterizing module sdram
+Progress: Adding epcs [altera_avalon_epcs_flash_controller 13.0.1]
+Progress: Parameterizing module epcs
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding ledgreen [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module ledgreen
+Progress: Adding lcd_16207 [altera_avalon_lcd_16207 13.0.1]
+Progress: Parameterizing module lcd_16207
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: myniosiicpu.epcs: Dedicated AS interface is not supported, signals are exported to top level design.
+Info: myniosiicpu.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: myniosiicpu.sysid: Time stamp will be automatically updated when this component is generated.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=D:/programs/FPGA/PLD/de2_115/ --output-directory=D:/programs/FPGA/PLD/de2_115/myniosiicpu/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:D:/programs/FPGA/PLD/de2_115/myniosiicpu.sopcinfo --report-file=html:D:/programs/FPGA/PLD/de2_115/myniosiicpu.html --report-file=qip:D:/programs/FPGA/PLD/de2_115/myniosiicpu/synthesis/myniosiicpu.qip --report-file=cmp:D:/programs/FPGA/PLD/de2_115/myniosiicpu.cmp --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE115F29C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=D:/programs/FPGA/PLD/de2_115/myniosiicpu.qsys --language=VERILOG
+Progress: Loading de2_115/myniosiicpu.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 13.0]
+Progress: Parameterizing module clk
+Progress: Adding cpu [altera_nios2_qsys 13.0]
+Progress: Parameterizing module cpu
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.0.1]
+Progress: Parameterizing module sdram
+Progress: Adding epcs [altera_avalon_epcs_flash_controller 13.0.1]
+Progress: Parameterizing module epcs
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding ledgreen [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module ledgreen
+Progress: Adding lcd_16207 [altera_avalon_lcd_16207 13.0.1]
+Progress: Parameterizing module lcd_16207
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: myniosiicpu.epcs: Dedicated AS interface is not supported, signals are exported to top level design.
+Info: myniosiicpu.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: myniosiicpu.sysid: Time stamp will be automatically updated when this component is generated.
+Info: myniosiicpu: Generating myniosiicpu "myniosiicpu" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 8 modules, 37 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 17 modules, 73 connections
+Info: merlin_domain_transform: After transform: 35 modules, 186 connections
+Info: merlin_router_transform: After transform: 44 modules, 222 connections
+Info: merlin_traffic_limiter_transform: After transform: 45 modules, 227 connections
+Info: merlin_burst_transform: After transform: 46 modules, 231 connections
+Info: reset_adaptation_transform: After transform: 47 modules, 181 connections
+Info: merlin_network_to_switch_transform: After transform: 64 modules, 227 connections
+Info: merlin_width_transform: After transform: 66 modules, 233 connections
+Info: limiter_update_transform: After transform: 66 modules, 234 connections
+Info: merlin_mm_transform: After transform: 66 modules, 234 connections
+Info: merlin_interrupt_mapper_transform: After transform: 67 modules, 237 connections
+Warning: myniosiicpu: "No matching role found for epcs:epcs_control_port:endofpacket (endofpacket)"
+Warning: myniosiicpu: "No matching role found for epcs:epcs_control_port:dataavailable (dataavailable)"
+Warning: myniosiicpu: "No matching role found for epcs:epcs_control_port:readyfordata (readyfordata)"
+Error: Generation stopped, 66 or more modules remaining
+Info: myniosiicpu: Done myniosiicpu" with 26 modules, 1 files, 360928 bytes
+Error: ip-generate failed with exit code 1: 1 Error, 3 Warnings
+Info: Stopping: Create HDL design files for synthesis

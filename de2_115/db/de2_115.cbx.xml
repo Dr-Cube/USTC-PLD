@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="de2_115">
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_115|myniosiicpu:inst|myniosiicpu_cpu:cpu|myniosiicpu_cpu_mult_cell:the_myniosiicpu_cpu_mult_cell|altera_mult_add:the_altmult_add_part_2" CBX_FILE_NAME="altera_mult_add_s1u2.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_115|myniosiicpu:inst|myniosiicpu_epcs:epcs|altsyncram:the_boot_copier_rom" CBX_FILE_NAME="altsyncram_v041.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_115|myniosiicpu:inst|myniosiicpu_jtag_uart:jtag_uart|myniosiicpu_jtag_uart_scfifo_r:the_myniosiicpu_jtag_uart_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_jr21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_115|myniosiicpu:inst|myniosiicpu_cpu:cpu|myniosiicpu_cpu_ic_data_module:myniosiicpu_cpu_ic_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_sjd1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_115|myniosiicpu:inst|myniosiicpu_cpu:cpu|myniosiicpu_cpu_ic_tag_module:myniosiicpu_cpu_ic_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_ceh1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_115|myniosiicpu:inst|myniosiicpu_cpu:cpu|myniosiicpu_cpu_mult_cell:the_myniosiicpu_cpu_mult_cell|altera_mult_add:the_altmult_add_part_2|altera_mult_add_s1u2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_j011.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_115|myniosiicpu:inst|myniosiicpu_cpu:cpu|myniosiicpu_cpu_nios2_oci:the_myniosiicpu_cpu_nios2_oci|myniosiicpu_cpu_nios2_ocimem:the_myniosiicpu_cpu_nios2_ocimem|myniosiicpu_cpu_ociram_sp_ram_module:myniosiicpu_cpu_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_u081.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_115|myniosiicpu:inst|myniosiicpu_cpu:cpu|myniosiicpu_cpu_register_bank_b_module:myniosiicpu_cpu_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_4gg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_115|myniosiicpu:inst|myniosiicpu_cpu:cpu|lpm_add_sub:Add10" CBX_FILE_NAME="add_sub_qvi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_115|myniosiicpu:inst|myniosiicpu_cpu:cpu|myniosiicpu_cpu_mult_cell:the_myniosiicpu_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_q1u2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_jp01.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_115|myniosiicpu:inst|myniosiicpu_cpu:cpu|myniosiicpu_cpu_bht_module:myniosiicpu_cpu_bht|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_32h1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_115|myniosiicpu:inst|myniosiicpu_cpu:cpu|myniosiicpu_cpu_mult_cell:the_myniosiicpu_cpu_mult_cell|altera_mult_add:the_altmult_add_part_1" CBX_FILE_NAME="altera_mult_add_q1u2.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_115|myniosiicpu:inst|myniosiicpu_cpu:cpu|myniosiicpu_cpu_register_bank_a_module:myniosiicpu_cpu_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_3gg1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_115|myniosiicpu:inst|myniosiicpu_jtag_uart:jtag_uart|myniosiicpu_jtag_uart_scfifo_w:the_myniosiicpu_jtag_uart_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_jr21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|de2_115|mypll:inst2|altpll:altpll_component" CBX_FILE_NAME="mypll_altpll.v"/>
+	</PROJECT>
+</LOG_ROOT>
